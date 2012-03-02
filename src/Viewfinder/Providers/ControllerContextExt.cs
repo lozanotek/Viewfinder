@@ -1,4 +1,4 @@
-namespace Viewfinder {
+namespace Viewfinder.Providers {
     using System;
     using System.Web.Mvc;
 
@@ -18,10 +18,13 @@ namespace Viewfinder {
         }
 
         public static bool IsMobileRequest(this ControllerContext context) {
-            var request = context.HttpContext.Request;
+            var mobileRequest = context.IsAndroidRequest();
 
-            return request.Browser.IsMobileDevice && 
-                !(IsAndroidRequest(context) || IsiOSRequest(context));
+            if (!mobileRequest) {
+                mobileRequest = context.IsiOSRequest();
+            }
+
+            return mobileRequest;
         }
 
         public static bool IsUserAgent(this ControllerContext context, string userAgent) {

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+        <id>Viewfinder.Content</id>
+	<title>Viewfinder Mobile Views</title>
+        <version>1.1</version>
+        <authors>Javier Lozano</authors>
+        <owners>Javier Loznao</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <tags>Viewfinder ASP.NET MVC</tags>
+        <description>Simple default mobile views to be used with Viewfinder that leverage jQuery Mobile.</description>
+        <language>en-US</language>
+    </metadata>
+</package>

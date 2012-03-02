@@ -44,21 +44,24 @@
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndroidViewProvider.cs" />
-    <Compile Include="Bootstrap.cs" />
-    <Compile Include="ControllerContextExt.cs" />
-    <Compile Include="IosViewProvider.cs" />
+    <Compile Include="Providers\AndroidViewProvider.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Providers\ControllerContextExt.cs" />
+    <Compile Include="Providers\IosViewProvider.cs" />
     <Compile Include="ViewInfo.cs" />
     <Compile Include="ViewfinderFilter.cs" />
-    <Compile Include="IViewPathProvider.cs" />
+    <Compile Include="IViewInfoProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewProviderCollection.cs" />
-    <Compile Include="ViewProviders.cs" />
+    <Compile Include="ViewInfoProviderCollection.cs" />
+    <Compile Include="ViewInfoProviders.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(TargetDir)*.* $(SolutionDir)..\build\binaries\ /Y /E</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

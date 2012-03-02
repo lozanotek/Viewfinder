@@ -1,0 +1,15 @@
+To use Viewfinder, place the following lines within your Global.asax.cs (or your wherever your HttpApplication resides) file:
+
+    Viewfinder.Bootstrapper.RegisterGlobalFilter();
+
+
+This will register the ViewfinderFilter to use IViewPathProvider instances
+ that have been registered via:
+
+    Viewfinder.Bootstrapper.AddProvider<MyCustomViewPathProvider>();
+
+Or
+    Viewfinder.Bootstrapper.AddProvider(new MyCustomViewPathProvider());
+
+For more information on this project, visit: https://github.com/lozanotek/viewfinder
+

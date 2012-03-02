@@ -1,0 +1,14 @@
+This package will install default mobile views within your application.  These views will work with the default ViewPathProviders from Viewfinder, looking for views under:
+
+ Home\
+   Mobile\
+     Android\
+       Index.cshtml
+     iOS\
+       Index.cshtml
+
+ Shared\
+   _Layout.Viewfinder.cshtml
+
+The _Layout.Viewfinder.cshtml contains reference to the MS CDN for jQuery Mobile.  For more information on the project, please check out the project's GitHub site: https://github.com/lozanotek/viewfinder
+

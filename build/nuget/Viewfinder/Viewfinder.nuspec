@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.4.0.0</version>
+    <authors>Javier Lozano</authors>
+    <owners>jglozano</owners>
+    <id>Viewfinder</id>
+    <title>Viewfinder</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple result filter to allow for finding mobile views.</description>
+    <language>en-US</language>
+    <tags>Viewfinder ASP.NET MVC</tags>
+  </metadata>
+</package>
