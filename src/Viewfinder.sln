@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{92A5730E-1913-4351-8E2D-A7C180677C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewfinder", "Viewfinder\Viewfinder.csproj", "{41CA264F-DD06-4E3C-A548-B3603074CC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewfinderHost", "ViewfinderHost\ViewfinderHost.csproj", "{2B3B46BB-5E36-4015-941F-544256683242}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41CA264F-DD06-4E3C-A548-B3603074CC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41CA264F-DD06-4E3C-A548-B3603074CC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41CA264F-DD06-4E3C-A548-B3603074CC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41CA264F-DD06-4E3C-A548-B3603074CC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3B46BB-5E36-4015-941F-544256683242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3B46BB-5E36-4015-941F-544256683242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3B46BB-5E36-4015-941F-544256683242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3B46BB-5E36-4015-941F-544256683242}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B3B46BB-5E36-4015-941F-544256683242} = {92A5730E-1913-4351-8E2D-A7C180677C8F}
+	EndGlobalSection
+EndGlobal
